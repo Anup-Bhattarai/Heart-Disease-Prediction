@@ -341,7 +341,12 @@ if submit_button:
         prediction = make_prediction(user_input)
         prediction_text = "**The model predicts that the patient is likely to have heart disease.**" if prediction[0] == 1 \
             else "**The model predicts that the patient is unlikely to have heart disease.**"
-        st.write(prediction_text)
+        
+        # Define color based on prediction
+        color = 'red' if prediction[0] == 1 else 'green'
+        
+        # Write prediction text with specified color
+        st.markdown(f'<font color="{color}">{prediction_text}</font>', unsafe_allow_html=True)
 
 css = """
 @keyframes slidein {

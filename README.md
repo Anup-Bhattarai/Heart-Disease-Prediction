@@ -30,7 +30,7 @@ The Heart Disease Prediction App is a revolutionary tool designed to assist both
 
 1. Install the required dependencies by running `pip install -r requirements.txt`.
 
-2. Launch the app by executing `streamlit run heart_disease_prediction.py` in your terminal.
+2. Launch the app by executing 'heart_disease_streamlit.ipynb` in your terminal and then 'heart.py'.
 
 3. Input the necessary health parameters and click "Submit" to obtain predictions.
 
